@@ -11,33 +11,254 @@
         <!-- Навигация назад -->
         <a href="index.html" class="back-link">← Назад к каталогу</a>
 
-        <!-- Товар: Костюм -->
-        <div class="product-detail">
-            <!-- Галерея изображений -->
+        <!-- ====== ТОВАР 1: ПЛАТЬЕ ====== -->
+        <div id="product1" class="product-detail">
             <div class="gallery">
                 <div class="main-image">
-                    <img src="https://via.placeholder.com/500x500/2c3e50/ffffff?text=Костюм+основной" alt="Костюм основной">
+                     <img src="images/platye-1.jpg" alt="Платье" id="mainImage1">
+    </div>
+    <div class="thumbnails">
+        <img src="images/platye-2.jpg" alt="Фото 1" class="thumbnail" data-main="images/platye-1.jpg">
+        <img src="images/platye-3.jpg" alt="Фото 2" class="thumbnail" data-main="images/platye-3.jpg">
+        <img src="images/platye-4.jpg" alt="Фото 3" class="thumbnail" data-main="images/platye-4.jpg">
+    </div>
+</div>
+            <div class="product-info">
+                <h1>Платье</h1>
+                <p class="product-category">👩 Женская одежда</p>
+                <p class="product-price">$89</p>
+                <p class="product-rating">⭐ 4.8 (89 отзывов)</p>
+                <div class="product-description">
+                    <h3>Описание</h3>
+                    <p>Элегантное вечернее платье из натурального шёлка. Идеально подходит для торжественных мероприятий, выпускных и свадеб. Платье имеет приталенный силуэт, открытую спину и длину макси.</p>
                 </div>
-                <div class="thumbnails">
-                    <img src="https://via.placeholder.com/100x100/2c3e50/ffffff?text=Фото+1" alt="Костюм фото 1" class="thumbnail active">
-                    <img src="https://via.placeholder.com/100x100/34495e/ffffff?text=Фото+2" alt="Костюм фото 2" class="thumbnail">
-                    <img src="https://via.placeholder.com/100x100/1a252f/ffffff?text=Фото+3" alt="Костюм фото 3" class="thumbnail">
-                    <img src="https://via.placeholder.com/100x100/4a6b8a/ffffff?text=Фото+4" alt="Костюм фото 4" class="thumbnail">
+                <div class="product-characters">
+                    <h3>Характеристики</h3>
+                    <ul>
+                        <li><span>Материал:</span> Шёлк 100%</li>
+                        <li><span>Цвет:</span> Изумрудный</li>
+                        <li><span>Размеры:</span> XS, S, M, L, XL</li>
+                        <li><span>Сезон:</span> Весна, Лето</li>
+                        <li><span>Страна:</span> Франция</li>
+                        <li><span>Артикул:</span> DRS-2024-001</li>
+                    </ul>
+                </div>
+                <button class="btn-buy">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <!-- ====== ОТЗЫВЫ ДЛЯ ПЛАТЬЯ ====== -->
+        <div id="reviews1" class="reviews-section">
+            <h2>Отзывы покупателей</h2>
+            <div id="reviewsContainer1">
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">Екатерина М.</span>
+                        <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                        <span class="review-date">10 июня 2026</span>
+                    </div>
+                    <p class="review-text">Платье просто шикарное! Сидит как влитое, ткань очень приятная.</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">Анна К.</span>
+                        <span class="review-rating">⭐⭐⭐⭐</span>
+                        <span class="review-date">25 мая 2026</span>
+                    </div>
+                    <p class="review-text">Очень красивое платье, но размер пришлось чуть ушить.</p>
                 </div>
             </div>
+            <!-- Форма добавления отзыва -->
+            <div class="review-form">
+                <h3>Добавить отзыв</h3>
+                <input type="text" id="reviewAuthor1" placeholder="Ваше имя" class="review-input">
+                <div class="rating-select">
+                    <span>Оценка: </span>
+                    <select id="reviewRating1" class="review-select">
+                        <option value="⭐">⭐</option>
+                        <option value="⭐⭐">⭐⭐</option>
+                        <option value="⭐⭐⭐">⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐" selected>⭐⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+                <textarea id="reviewText1" placeholder="Ваш отзыв..." class="review-textarea"></textarea>
+                <button class="btn-submit-review" data-target="1">Добавить отзыв</button>
+            </div>
+        </div>
 
-            <!-- Информация о товаре -->
+        <!-- ====== ТОВАР 2: БЛУЗКА ====== -->
+        <div id="product2" class="product-detail" style="display:none;">
+            <div class="gallery">
+                <div class="main-image">
+                    <img src="images/bluzka-1.jpg" alt="Блузка" id="mainImage2">
+                </div>
+                <div class="thumbnails">
+                    <img src="images/bluzka-2.jpg" alt="Фото 1" class="thumbnail" data-main="images/bluzka-1.jpg">
+            <img src="images/bluzka-3.jpg" alt="Фото 2" class="thumbnail" data-main="images/bluzka-3.jpg">
+            <img src="images/bluzka-4.jpg" alt="Фото 3" class="thumbnail" data-main="images/bluzka-4.jpg">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Блузка</h1>
+                <p class="product-category">👩 Женская одежда</p>
+                <p class="product-price">$55</p>
+                <p class="product-rating">⭐ 4.5 (67 отзывов)</p>
+                <div class="product-description">
+                    <h3>Описание</h3>
+                    <p>Стильная шёлковая блузка с V-образным вырезом и длинными рукавами. Отлично сочетается с юбками и брюками.</p>
+                </div>
+                <div class="product-characters">
+                    <h3>Характеристики</h3>
+                    <ul>
+                        <li><span>Материал:</span> Шёлк 100%</li>
+                        <li><span>Цвет:</span> Белый</li>
+                        <li><span>Размеры:</span> XS, S, M, L</li>
+                        <li><span>Сезон:</span> Весна, Лето</li>
+                        <li><span>Страна:</span> Италия</li>
+                        <li><span>Артикул:</span> BLZ-2024-002</li>
+                    </ul>
+                </div>
+                <button class="btn-buy">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <!-- ====== ОТЗЫВЫ ДЛЯ БЛУЗКИ ====== -->
+        <div id="reviews2" class="reviews-section" style="display:none;">
+            <h2>Отзывы покупателей</h2>
+            <div id="reviewsContainer2">
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">Ольга П.</span>
+                        <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                        <span class="review-date">5 июня 2026</span>
+                    </div>
+                    <p class="review-text">Любимая блузка! Носила уже много раз, не теряет форму.</p>
+                </div>
+            </div>
+            <div class="review-form">
+                <h3>Добавить отзыв</h3>
+                <input type="text" id="reviewAuthor2" placeholder="Ваше имя" class="review-input">
+                <div class="rating-select">
+                    <span>Оценка: </span>
+                    <select id="reviewRating2" class="review-select">
+                        <option value="⭐">⭐</option>
+                        <option value="⭐⭐">⭐⭐</option>
+                        <option value="⭐⭐⭐">⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐" selected>⭐⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+                <textarea id="reviewText2" placeholder="Ваш отзыв..." class="review-textarea"></textarea>
+                <button class="btn-submit-review" data-target="2">Добавить отзыв</button>
+            </div>
+        </div>
+
+        <!-- ====== ТОВАР 3: ЮБКА ====== -->
+<div id="product3" class="product-detail">
+    <div class="gallery">
+        <div class="main-image">
+            <img src="images/ubka-1.jpg" alt="Юбка" id="mainImage3">
+        </div>
+        <div class="thumbnails">
+            <img src="images/ubka-2.jpg" alt="Фото 1" class="thumbnail" data-main="images/ubka-1.jpg">
+            <img src="images/ubka-3.jpg" alt="Фото 2" class="thumbnail" data-main="images/ubka-3.jpg">
+            <img src="images/ubka-4.jpg" alt="Фото 3" class="thumbnail" data-main="images/ubka-4.jpg">
+        </div>
+    </div>
+    <div class="product-info">
+        <h1>Юбка</h1>
+        <p class="product-category">👩 Женская одежда</p>
+        <p class="product-price">$65</p>
+        <p class="product-rating">⭐ 4.3 (45 отзывов)</p>
+        
+        <div class="product-description">
+            <h3>Описание</h3>
+            <p>Классическая юбка-карандаш из плотного костюмного материала. Идеально сидит по фигуре, удлиняет ноги. Подходит для офисного стиля и деловых встреч. Застёжка на молнию сзади.</p>
+        </div>
+        
+        <div class="product-characters">
+            <h3>Характеристики</h3>
+            <ul>
+                <li><span>Материал:</span> Полиэстер 70%, Шерсть 30%</li>
+                <li><span>Цвет:</span> Чёрный</li>
+                <li><span>Размеры:</span> S, M, L, XL</li>
+                <li><span>Сезон:</span> Осень, Зима</li>
+                <li><span>Страна:</span> Германия</li>
+                <li><span>Артикул:</span> SKT-2024-003</li>
+            </ul>
+        </div>
+        
+        <button class="btn-buy">Добавить в корзину</button>
+    </div>
+</div>
+
+<!-- ====== ОТЗЫВЫ ДЛЯ ЮБКИ (ВНИЗУ) ====== -->
+<div id="reviews3" class="reviews-section">
+    <h2>Отзывы покупателей</h2>
+    
+    <div id="reviewsContainer3">
+        <div class="review">
+            <div class="review-header">
+                <span class="review-author">Светлана Б.</span>
+                <span class="review-rating">⭐⭐⭐⭐</span>
+                <span class="review-date">15 марта 2026</span>
+            </div>
+            <p class="review-text">Хорошая юбка, качественный материал. Слегка тесновата в бёдрах, лучше брать на размер больше.</p>
+        </div>
+        <div class="review">
+            <div class="review-header">
+                <span class="review-author">Елена В.</span>
+                <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                <span class="review-date">10 февраля 2026</span>
+            </div>
+            <p class="review-text">Отличная юбка! Сидит идеально, очень комфортная. Беру уже вторую.</p>
+        </div>
+    </div>
+
+    <!-- ФОРМА ДОБАВЛЕНИЯ ОТЗЫВА -->
+    <div class="review-form">
+        <h3>Добавить отзыв</h3>
+        <input type="text" id="reviewAuthor3" placeholder="Ваше имя" class="review-input">
+        
+        <div class="rating-select">
+            <span>Оценка: </span>
+            <select id="reviewRating3" class="review-select">
+                <option value="⭐">⭐</option>
+                <option value="⭐⭐">⭐⭐</option>
+                <option value="⭐⭐⭐">⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐" selected>⭐⭐⭐⭐</option>
+                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+            </select>
+        </div>
+        
+        <textarea id="reviewText3" placeholder="Ваш отзыв..." class="review-textarea"></textarea>
+        <button class="btn-submit-review" data-target="3">Добавить отзыв</button>
+    </div>
+</div>
+
+        <!-- ====== ТОВАР 4: КОСТЮМ ====== -->
+        <div id="product4" class="product-detail" style="display:none;">
+            <!-- Галерея Костюма -->
+<div class="gallery">
+    <div class="main-image">
+        <img src="images/kostum-1.jpg" alt="Костюм" id="mainImage4">
+    </div>
+    <div class="thumbnails">
+        <img src="images/kostum-2.jpg" alt="Фото 1" class="thumbnail" data-main="images/kostum-1.jpg">
+        <img src="images/kostum-3.jpg" alt="Фото 2" class="thumbnail" data-main="images/kostum-3.jpg">
+        <img src="images/kostum-4.jpg" alt="Фото 3" class="thumbnail" data-main="images/kostum-4.jpg">
+    </div>
+</div>
             <div class="product-info">
                 <h1>Классический костюм</h1>
                 <p class="product-category">👨 Мужская одежда</p>
                 <p class="product-price">$199</p>
                 <p class="product-rating">⭐ 4.9 (127 отзывов)</p>
-
                 <div class="product-description">
                     <h3>Описание</h3>
-                    <p>Элегантный классический костюм из высококачественной шерсти. Идеально подходит для деловых встреч, свадеб и торжественных мероприятий. Костюм состоит из пиджака и брюк. Ткань дышит, не мнётся и сохраняет форму.</p>
+                    <p>Элегантный классический костюм из высококачественной шерсти. Идеально подходит для деловых встреч, свадеб и торжественных мероприятий.</p>
                 </div>
-
                 <div class="product-characters">
                     <h3>Характеристики</h3>
                     <ul>
@@ -45,55 +266,198 @@
                         <li><span>Цвет:</span> Тёмно-синий</li>
                         <li><span>Размеры:</span> S, M, L, XL, XXL</li>
                         <li><span>Сезон:</span> Весна, Осень</li>
-                        <li><span>Страна производства:</span> Италия</li>
-                        <li><span>Артикул:</span> CLS-2024-001</li>
+                        <li><span>Страна:</span> Италия</li>
+                        <li><span>Артикул:</span> CLS-2024-004</li>
                     </ul>
                 </div>
-
                 <button class="btn-buy">Добавить в корзину</button>
             </div>
         </div>
 
-        <!-- Раздел отзывов -->
-        <div class="reviews-section">
+        <!-- ====== ОТЗЫВЫ ДЛЯ КОСТЮМА ====== -->
+        <div id="reviews4" class="reviews-section" style="display:none;">
             <h2>Отзывы покупателей</h2>
-
-            <div class="review">
-                <div class="review-header">
-                    <span class="review-author">Алексей С.</span>
-                    <span class="review-rating">⭐⭐⭐⭐⭐</span>
-                    <span class="review-date">15 июня 2026</span>
+            <div id="reviewsContainer4">
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">Алексей С.</span>
+                        <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                        <span class="review-date">15 июня 2026</span>
+                    </div>
+                    <p class="review-text">Отличный костюм! Сидит идеально, ткань приятная. Рекомендую!</p>
                 </div>
-                <p class="review-text">Отличный костюм! Сидит идеально, ткань приятная. На свадьбе выглядел шикарно. Рекомендую!</p>
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">Михаил П.</span>
+                        <span class="review-rating">⭐⭐⭐⭐</span>
+                        <span class="review-date">3 мая 2026</span>
+                    </div>
+                    <p class="review-text">Хороший костюм, но размер оказался чуть больше обычного.</p>
+                </div>
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">Дмитрий К.</span>
+                        <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                        <span class="review-date">20 апреля 2026</span>
+                    </div>
+                    <p class="review-text">Брал на собеседование. Костюм идеальный! Произвёл отличное впечатление.</p>
+                </div>
             </div>
-
-            <div class="review">
-                <div class="review-header">
-                    <span class="review-author">Михаил П.</span>
-                    <span class="review-rating">⭐⭐⭐⭐</span>
-                    <span class="review-date">3 мая 2026</span>
+            <div class="review-form">
+                <h3>Добавить отзыв</h3>
+                <input type="text" id="reviewAuthor4" placeholder="Ваше имя" class="review-input">
+                <div class="rating-select">
+                    <span>Оценка: </span>
+                    <select id="reviewRating4" class="review-select">
+                        <option value="⭐">⭐</option>
+                        <option value="⭐⭐">⭐⭐</option>
+                        <option value="⭐⭐⭐">⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐" selected>⭐⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                    </select>
                 </div>
-                <p class="review-text">Хороший костюм, но размер оказался чуть больше обычного. Пришлось отдавать в ателье на ушивку. В остальном всё отлично.</p>
-            </div>
-
-            <div class="review">
-                <div class="review-header">
-                    <span class="review-author">Дмитрий К.</span>
-                    <span class="review-rating">⭐⭐⭐⭐⭐</span>
-                    <span class="review-date">20 апреля 2026</span>
-                </div>
-                <p class="review-text">Брал на собеседование. Костюм идеальный! Качество на высоте, смотрится дорого. Произвёл отличное впечатление.</p>
-            </div>
-
-            <div class="review">
-                <div class="review-header">
-                    <span class="review-author">Игорь Н.</span>
-                    <span class="review-rating">⭐⭐⭐</span>
-                    <span class="review-date">1 марта 2026</span>
-                </div>
-                <p class="review-text">Костюм неплохой, но цвет на фото оказался светлее, чем в реальности. Хотел тёмно-синий, получился почти чёрный.</p>
+                <textarea id="reviewText4" placeholder="Ваш отзыв..." class="review-textarea"></textarea>
+                <button class="btn-submit-review" data-target="4">Добавить отзыв</button>
             </div>
         </div>
+
+        <!-- ====== ТОВАР 5: РУБАШКА ====== -->
+        <div id="product5" class="product-detail" style="display:none;">
+            <div class="gallery">
+                <div class="main-image">
+                    <img src="images/rubashka-1.jpg" alt="Рубашка" id="mainImage5">
+                </div>
+                <div class="thumbnails">
+                    <img src="images/rubashka-2.jpg" alt="Фото 1" class="thumbnail" data-main="images/rubashka-1.jpg">
+            <img src="images/rubashka-3.jpg" alt="Фото 2" class="thumbnail" data-main="images/rubashka-3.jpg">
+            <img src="images/rubashka-4.jpg" alt="Фото 3" class="thumbnail" data-main="images/rubashka-4.jpg">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Рубашка</h1>
+                <p class="product-category">👨 Мужская одежда</p>
+                <p class="product-price">$45</p>
+                <p class="product-rating">⭐ 4.4 (58 отзывов)</p>
+                <div class="product-description">
+                    <h3>Описание</h3>
+                    <p>Классическая мужская рубашка из хлопка. Идеально сидит, не требует особого ухода. Подходит для офиса и повседневной носки.</p>
+                </div>
+                <div class="product-characters">
+                    <h3>Характеристики</h3>
+                    <ul>
+                        <li><span>Материал:</span> Хлопок 100%</li>
+                        <li><span>Цвет:</span> Белый</li>
+                        <li><span>Размеры:</span> S, M, L, XL</li>
+                        <li><span>Сезон:</span> Все сезоны</li>
+                        <li><span>Страна:</span> Турция</li>
+                        <li><span>Артикул:</span> SHT-2024-005</li>
+                    </ul>
+                </div>
+                <button class="btn-buy">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <!-- ====== ОТЗЫВЫ ДЛЯ РУБАШКИ ====== -->
+        <div id="reviews5" class="reviews-section" style="display:none;">
+            <h2>Отзывы покупателей</h2>
+            <div id="reviewsContainer5">
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">Владимир Н.</span>
+                        <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                        <span class="review-date">10 мая 2026</span>
+                    </div>
+                    <p class="review-text">Отличная рубашка! Хороший хлопок, не мнётся.</p>
+                </div>
+            </div>
+            <div class="review-form">
+                <h3>Добавить отзыв</h3>
+                <input type="text" id="reviewAuthor5" placeholder="Ваше имя" class="review-input">
+                <div class="rating-select">
+                    <span>Оценка: </span>
+                    <select id="reviewRating5" class="review-select">
+                        <option value="⭐">⭐</option>
+                        <option value="⭐⭐">⭐⭐</option>
+                        <option value="⭐⭐⭐">⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐" selected>⭐⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+                <textarea id="reviewText5" placeholder="Ваш отзыв..." class="review-textarea"></textarea>
+                <button class="btn-submit-review" data-target="5">Добавить отзыв</button>
+            </div>
+        </div>
+
+        <!-- ====== ТОВАР 6: ДЖИНСЫ ====== -->
+        <div id="product6" class="product-detail" style="display:none;">
+            <div class="gallery">
+                <div class="main-image">
+                    <img src="images/dzhinsy-1.jpg" alt="Джинсы" id="mainImage6">
+                </div>
+                <div class="thumbnails">
+                    <img src="images/dzhinsy-2.jpg" alt="Фото 1" class="thumbnail" data-main="images/dzhinsy-1.jpg">
+            <img src="images/dzhinsy-3.jpg" alt="Фото 2" class="thumbnail" data-main="images/dzhinsy-3.jpg">
+            <img src="images/dzhinsy-4.jpg" alt="Фото 3" class="thumbnail" data-main="images/dzhinsy-4.jpg">
+                </div>
+            </div>
+            <div class="product-info">
+                <h1>Джинсы</h1>
+                <p class="product-category">👨 Мужская одежда</p>
+                <p class="product-price">$75</p>
+                <p class="product-rating">⭐ 4.6 (92 отзыва)</p>
+                <div class="product-description">
+                    <h3>Описание</h3>
+                    <p>Стильные прямые джинсы из денима средней плотности. Классическая модель с пятью карманами.</p>
+                </div>
+                <div class="product-characters">
+                    <h3>Характеристики</h3>
+                    <ul>
+                        <li><span>Материал:</span> Деним 100% хлопок</li>
+                        <li><span>Цвет:</span> Тёмно-синий</li>
+                        <li><span>Размеры:</span> 30-42 (US)</li>
+                        <li><span>Сезон:</span> Все сезоны</li>
+                        <li><span>Страна:</span> Турция</li>
+                        <li><span>Артикул:</span> JNS-2024-006</li>
+                    </ul>
+                </div>
+                <button class="btn-buy">Добавить в корзину</button>
+            </div>
+        </div>
+
+        <!-- ====== ОТЗЫВЫ ДЛЯ ДЖИНСОВ ====== -->
+        <div id="reviews6" class="reviews-section" style="display:none;">
+            <h2>Отзывы покупателей</h2>
+            <div id="reviewsContainer6">
+                <div class="review">
+                    <div class="review-header">
+                        <span class="review-author">Артём Р.</span>
+                        <span class="review-rating">⭐⭐⭐⭐⭐</span>
+                        <span class="review-date">20 мая 2026</span>
+                    </div>
+                    <p class="review-text">Лучшие джинсы! Сидят отлично, не растягиваются.</p>
+                </div>
+            </div>
+            <div class="review-form">
+                <h3>Добавить отзыв</h3>
+                <input type="text" id="reviewAuthor6" placeholder="Ваше имя" class="review-input">
+                <div class="rating-select">
+                    <span>Оценка: </span>
+                    <select id="reviewRating6" class="review-select">
+                        <option value="⭐">⭐</option>
+                        <option value="⭐⭐">⭐⭐</option>
+                        <option value="⭐⭐⭐">⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐" selected>⭐⭐⭐⭐</option>
+                        <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+                    </select>
+                </div>
+                <textarea id="reviewText6" placeholder="Ваш отзыв..." class="review-textarea"></textarea>
+                <button class="btn-submit-review" data-target="6">Добавить отзыв</button>
+            </div>
+        </div>
+
     </div>
+
+    <!-- Подключаем скрипт для страницы детального просмотра -->
+    <script src="product-script.js"></script>
 </body>
 </html>
