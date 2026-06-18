@@ -21,6 +21,7 @@
                 <p class="category">👩 Женская</p>
                 <p class="price">$89</p>
                 <p class="rating">⭐ 4.8</p>
+                <a href="product.html?id=1" class="btn-detail">Подробнее</a>
             </div>
 
             <div class="item" data-id="2" data-name="Блузка" data-category="женская" data-price="55" data-rating="4.5">
@@ -28,6 +29,7 @@
                 <p class="category">👩 Женская</p>
                 <p class="price">$55</p>
                 <p class="rating">⭐ 4.5</p>
+                <a href="product.html?id=2" class="btn-detail">Подробнее</a>
             </div>
 
             <div class="item" data-id="3" data-name="Юбка" data-category="женская" data-price="65" data-rating="4.3">
@@ -35,6 +37,7 @@
                 <p class="category">👩 Женская</p>
                 <p class="price">$65</p>
                 <p class="rating">⭐ 4.3</p>
+                <a href="product.html?id=3" class="btn-detail">Подробнее</a>
             </div>
 
             <!-- Мужская одежда -->
@@ -43,6 +46,7 @@
                 <p class="category">👨 Мужская</p>
                 <p class="price">$199</p>
                 <p class="rating">⭐ 4.9</p>
+                <a href="product.html?id=4" class="btn-detail">Подробнее</a>
             </div>
 
             <div class="item" data-id="5" data-name="Рубашка" data-category="мужская" data-price="45" data-rating="4.4">
@@ -50,6 +54,7 @@
                 <p class="category">👨 Мужская</p>
                 <p class="price">$45</p>
                 <p class="rating">⭐ 4.4</p>
+                <a href="product.html?id=5" class="btn-detail">Подробнее</a>
             </div>
 
             <div class="item" data-id="6" data-name="Джинсы" data-category="мужская" data-price="75" data-rating="4.6">
@@ -57,6 +62,7 @@
                 <p class="category">👨 Мужская</p>
                 <p class="price">$75</p>
                 <p class="rating">⭐ 4.6</p>
+                <a href="product.html?id=6" class="btn-detail">Подробнее</a>
             </div>
         </div>
 
@@ -67,5 +73,28 @@
             <button class="page-btn" data-page="3">3</button>
         </div>
     </div>
+
+    <!-- JavaScript для поиска -->
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const items = document.querySelectorAll('.item');
+
+        function filterItems() {
+            const searchText = searchInput.value.toLowerCase().trim();
+
+            items.forEach(item => {
+                const itemName = item.getAttribute('data-name').toLowerCase();
+                const itemCategory = item.getAttribute('data-category').toLowerCase();
+
+                if (itemName.includes(searchText) || itemCategory.includes(searchText)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', filterItems);
+    </script>
 </body>
 </html>
