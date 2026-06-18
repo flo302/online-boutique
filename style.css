@@ -106,3 +106,258 @@ h1 {
 .page-btn:active {
     transform: scale(0.95);
 }
+/* ===== КНОПКА ПОДРОБНЕЕ ===== */
+.btn-detail {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 18px;
+    background: #2c3e50;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.btn-detail:hover {
+    background: #1a252f;
+}
+
+/* ===== СТРАНИЦА ДЕТАЛЬНОГО ПРОСМОТРА ===== */
+.back-link {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #e55a5a;
+    text-decoration: underline;
+}
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+.thumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.3s, transform 0.3s;
+}
+
+.thumbnail:hover {
+    border-color: #ff6b6b;
+    transform: scale(1.05);
+}
+
+.thumbnail.active {
+    border-color: #ff6b6b;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.product-info h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+    text-align: left;
+}
+
+.product-category {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-price {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6b6b;
+}
+
+.product-rating {
+    font-size: 16px;
+    color: #f9a825;
+}
+
+.product-description h3,
+.product-characters h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.product-description p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.product-characters ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-characters ul li {
+    padding: 6px 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 14px;
+    color: #555;
+}
+
+.product-characters ul li span {
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    width: 140px;
+}
+
+.btn-buy {
+    padding: 14px 30px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-buy:hover {
+    background: #e55a5a;
+    transform: scale(1.02);
+}
+
+.btn-buy:active {
+    transform: scale(0.98);
+}
+
+.reviews-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+}
+
+.reviews-section h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.review {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.review:last-child {
+    border-bottom: none;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+}
+
+.review-rating {
+    color: #f9a825;
+    font-size: 14px;
+}
+
+.review-date {
+    color: #999;
+    font-size: 13px;
+    margin-left: auto;
+}
+
+.review-text {
+    color: #555;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .thumbnails {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .product-info h1 {
+        font-size: 22px;
+    }
+
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .review-date {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-characters ul li span {
+        width: 100px;
+    }
+}
