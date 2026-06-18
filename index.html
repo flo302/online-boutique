@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-бутик одежды</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>👗 Онлайн-бутик одежды</h1>
+
+        <!-- Поле для поиска -->
+        <input type="text" id="searchInput" placeholder="Поиск товаров..." class="search-input">
+
+        <!-- Товары (статические данные в HTML) -->
+        <div id="itemsContainer">
+            <!-- Женская одежда -->
+            <div class="item" data-id="1" data-name="Платье" data-category="женская" data-price="89" data-rating="4.8">
+                <h3>Платье</h3>
+                <p class="category">👩 Женская</p>
+                <p class="price">$89</p>
+                <p class="rating">⭐ 4.8</p>
+            </div>
+
+            <div class="item" data-id="2" data-name="Блузка" data-category="женская" data-price="55" data-rating="4.5">
+                <h3>Блузка</h3>
+                <p class="category">👩 Женская</p>
+                <p class="price">$55</p>
+                <p class="rating">⭐ 4.5</p>
+            </div>
+
+            <div class="item" data-id="3" data-name="Юбка" data-category="женская" data-price="65" data-rating="4.3">
+                <h3>Юбка</h3>
+                <p class="category">👩 Женская</p>
+                <p class="price">$65</p>
+                <p class="rating">⭐ 4.3</p>
+            </div>
+
+            <!-- Мужская одежда -->
+            <div class="item" data-id="4" data-name="Костюм" data-category="мужская" data-price="199" data-rating="4.9">
+                <h3>Костюм</h3>
+                <p class="category">👨 Мужская</p>
+                <p class="price">$199</p>
+                <p class="rating">⭐ 4.9</p>
+            </div>
+
+            <div class="item" data-id="5" data-name="Рубашка" data-category="мужская" data-price="45" data-rating="4.4">
+                <h3>Рубашка</h3>
+                <p class="category">👨 Мужская</p>
+                <p class="price">$45</p>
+                <p class="rating">⭐ 4.4</p>
+            </div>
+
+            <div class="item" data-id="6" data-name="Джинсы" data-category="мужская" data-price="75" data-rating="4.6">
+                <h3>Джинсы</h3>
+                <p class="category">👨 Мужская</p>
+                <p class="price">$75</p>
+                <p class="rating">⭐ 4.6</p>
+            </div>
+        </div>
+
+        <!-- Кнопки пагинации -->
+        <div class="pagination">
+            <button class="page-btn" data-page="1">1</button>
+            <button class="page-btn" data-page="2">2</button>
+            <button class="page-btn" data-page="3">3</button>
+        </div>
+    </div>
+</body>
+</html>
