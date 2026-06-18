@@ -10,10 +10,19 @@
     <div class="container">
         <h1>👗 Онлайн-бутик одежды</h1>
 
-        <!-- Поле для поиска -->
-        <input type="text" id="searchInput" placeholder="Поиск товаров..." class="search-input">
+        <!-- Поиск + Сортировка -->
+        <div class="search-sort">
+            <input type="text" id="searchInput" placeholder="🔍 Поиск товаров..." class="search-input">
+            
+            <div class="sort-buttons">
+                <button class="sort-btn" data-sort="name">По имени ↑</button>
+                <button class="sort-btn" data-sort="price">По цене ↑</button>
+                <button class="sort-btn" data-sort="rating">По рейтингу ↑</button>
+                <button class="sort-btn" id="resetFilters">Сбросить</button>
+            </div>
+        </div>
 
-        <!-- Товары (статические данные в HTML) -->
+        <!-- Товары -->
         <div id="itemsContainer">
             <!-- Женская одежда -->
             <div class="item" data-id="1" data-name="Платье" data-category="женская" data-price="89" data-rating="4.8">
@@ -66,35 +75,11 @@
             </div>
         </div>
 
-        <!-- Кнопки пагинации -->
-        <div class="pagination">
-            <button class="page-btn" data-page="1">1</button>
-            <button class="page-btn" data-page="2">2</button>
-            <button class="page-btn" data-page="3">3</button>
-        </div>
+        <!-- Пагинация -->
+        <div class="pagination" id="pagination"></div>
     </div>
 
-    <!-- JavaScript для поиска -->
-    <script>
-        const searchInput = document.getElementById('searchInput');
-        const items = document.querySelectorAll('.item');
-
-        function filterItems() {
-            const searchText = searchInput.value.toLowerCase().trim();
-
-            items.forEach(item => {
-                const itemName = item.getAttribute('data-name').toLowerCase();
-                const itemCategory = item.getAttribute('data-category').toLowerCase();
-
-                if (itemName.includes(searchText) || itemCategory.includes(searchText)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        searchInput.addEventListener('input', filterItems);
-    </script>
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
