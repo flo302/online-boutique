@@ -411,3 +411,211 @@ h1 {
         width: 100px;
     }
 }
+/* ===== ШАПКА ===== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    margin: 0;
+    text-align: left;
+}
+
+.about-link {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 2px solid #ff6b6b;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.about-link:hover {
+    background: #ff6b6b;
+    color: white;
+}
+
+/* Основной контейнер */
+.about-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+}
+
+/* Заголовок "О нас" */
+.about-page h2 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.about-page h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #ff6b6b;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* Интро-блок */
+.about-page .intro {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 25px 30px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    border-left: 5px solid #ff6b6b;
+}
+
+.about-page .intro p {
+    margin: 8px 0;
+}
+
+.about-page .intro strong {
+    color: #ff6b6b;
+}
+
+/* Заголовки */
+.about-page h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Сетка преимуществ */
+.about-page .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.about-page .features li {
+    background: #f9f9f9;
+    padding: 18px 22px;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #444;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    text-align: center;
+    font-weight: 500;
+}
+
+.about-page .features li:hover {
+    background: #ff6b6b;
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(255,107,107,0.35);
+    border-color: #ff6b6b;
+}
+
+/* Блок команды */
+.about-page .team {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.about-page .team h3 {
+    margin-top: 0;
+}
+
+/* Сетка команды */
+.about-page .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Карточка участника команды */
+.about-page .team-card {
+    text-align: center;
+    padding: 25px 15px;
+    background: #f9f9f9;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.about-page .team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-color: #ff6b6b;
+}
+
+.about-page .team-photo {
+    font-size: 48px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.about-page .team-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 8px 0 4px;
+}
+
+.about-page .team-card p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+}
+
+/* ===== АДАПТИВ ===== */
+max-width: 768px {
+    .about-page {
+        padding: 25px 20px;
+    }
+
+    .about-page h2 {
+        font-size: 28px;
+    }
+
+    .about-page .intro {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .about-page .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-page .team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+max-width: 480px {
+    .about-page .features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-page .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-page h2 {
+        font-size: 24px;
+    }
+}
